@@ -1,0 +1,31 @@
+GET http://localhost:3332/videos
+
+###
+
+GET http://localhost:3332/videos?search=node
+
+###
+
+POST http://localhost:3332/videos
+Content-Type: application/json
+
+{
+  "title": "Vídeo 03",
+  "description": "Esse é o meu Vídeo 03",
+  "duration": "180"
+}
+
+###
+
+PUT http://localhost:3332/videos/d5fac723-6c4f-4a98-a293-e1f23aea647b
+Content-Type: application/json
+
+{
+  "title": "Vídeo 02",
+  "description": "Esse é o meu Vídeo 02",
+  "duration": "180"
+}
+
+###
+
+DELETE http://localhost:3332/videos/00ee1953-3c99-44b5-8da4-0e4bc5bb6dfa
